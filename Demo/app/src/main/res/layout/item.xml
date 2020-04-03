@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:id="@+id/icone_item"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/icone_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:textSize="30dp">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:background="@drawable/icone_mask_border"
+        android:layout_alignTop="@id/icone_item"
+        android:layout_alignLeft="@id/icone_item"
+        android:id="@+id/icone_item_mask"
+        android:visibility="invisible">
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/close"
+        android:layout_alignRight="@id/icone_item"
+        android:layout_marginRight="-8dp"
+        android:id="@+id/icone_item_delete"
+        android:visibility="invisible">
+
+    </ImageButton>
+</RelativeLayout>
